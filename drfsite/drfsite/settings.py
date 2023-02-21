@@ -128,5 +128,11 @@ REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': [
         'rest_framework.renderers.JSONRenderer',
         'rest_framework.renderers.BrowsableAPIRenderer', # включение web формы DRF
-    ]
+    ],
+
+    # 'DEFAULT_PERMISSION_CLASSES': [
+    #     # IsAuthenticated доступ к данным только авторизованным пользователям
+    #     # AllowAny доступ для всех
+    #     'rest_framework.permissions.IsAuthenticated',
+    # ]
 }
